@@ -75,7 +75,8 @@ y_val = pad_sequences(y_val,maxlen = max_len_french,padding = 'post')
 
 # +1 for padding 
 y_voc_size   =  len(y_tokens.word_index) +1
-
+print('Hello World')
+i = 1
 from attention import AttentionLayer
 from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Concatenate, TimeDistributed, Bidirectional
 from tensorflow.keras.models import Model
